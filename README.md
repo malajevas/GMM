@@ -9,8 +9,8 @@ Rough outline of the pipeline: (The steps in the outline are a continuous subjec
 
 Each part of the pipeline should do exactly ONE thing and have one corresponding .py file. <br/>
 E.g.: <br/>
-**video_to_img.py** should take the first .mp4(or some other) file in the same directory and use ffmpeg to transform it into a collection of images and put them into a folder /data, such that the the image paths are /data/img001.jpg /data/img002.jpg and so on. 
+**src/video_to_img.py** if copied to another directory should take the first .mp4(or some other) file in the same directory and use ffmpeg to transform it into a collection of images and put them into a folder /data, such that the the image paths are /data/img001.jpg /data/img002.jpg and so on. 
 
-**delete_blurry.py** should read through each image in /data and delete those that are blurry.
+**src/delete_blurry.py** should read through each image in /data and delete those that are blurry.
 
-If the .py file requires to use a non-standard library, either make the .py file download the libraries before running the main code, or add the library files to the commit at /src/lib.py or something like that.
+If the .py file requires to use a non-standard library, either make the .py file download the libraries before running the main code, or add the library files to the commit at **/lib/lib1.py** or something like that.
